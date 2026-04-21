@@ -91,7 +91,7 @@ a {
 .main {
     display: flex;
     flex-direction: column;
-    gap: 2em;
+    gap: 5em;
     background-color: var(--navy-main-background);
 }
 
@@ -110,6 +110,24 @@ a {
     background: linear-gradient(to right, var(--teal-call-to-action-gradient), var(--cyan-call-to-action-gradient));
     border: none;
     border-radius: 30px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.card-title {
+    font-family: var(--font-secondary);
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: var(--white);
+}
+
+.card-text {
+    color: var(--off-white);
 }
 
 /* INTRO SECTION */
@@ -146,4 +164,27 @@ a {
 
 .btn-started {
     width: 15em;
+}
+
+
+
+/* BENFITS SECTION */
+
+.benefits {
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 5em !important;
+    padding: 1.5em;
+}
+
+.benefits .card {
+    gap: 1em;
+}
+
+.benefits .card-img-area {
+    padding-bottom: 1em;
+}
+
+.benefits .card-img {
+    width: 4em;
 }
