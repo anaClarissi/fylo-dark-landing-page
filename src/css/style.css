@@ -1,0 +1,34 @@
+:root {
+
+    /* COLORS */
+
+    --navy-background: #1c2431; /*intro and email sign up background*/
+    --navy-main-background: #181f2a;
+    --navy-footer-background: #0b1523;
+    --navy-testimonials-background: #202a3c;
+
+    --teal-call-to-action-gradient: #65e2d9; /*inside call-to-action gradient*/
+    --Cyan-call-to-action-gradient: #339ecc; /*inside call-to-action gradient*/
+    --red-error: hsl(0, 100%, 63%);
+
+    --white: #ffffff;
+
+    /* FONTS */
+
+    --font-primary: 'Open Sans', sans-serif;
+    --font-secondary: 'Raleway', Helvetica;
+    
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    width: 100%;
+    font-family: var(--font-primary);
+    font-size: 0.875rem;
+}
