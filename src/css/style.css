@@ -8,16 +8,17 @@
     --navy-testimonials-background: #202a3c;
 
     --teal-call-to-action-gradient: #65e2d9; /*inside call-to-action gradient*/
-    --Cyan-call-to-action-gradient: #339ecc; /*inside call-to-action gradient*/
+    --cyan-call-to-action-gradient: #339ecc; /*inside call-to-action gradient*/
     --red-error: hsl(0, 100%, 63%);
 
     --white: #ffffff;
+    --off-white: #dadada;
 
     /* FONTS */
 
     --font-primary: 'Open Sans', sans-serif;
     --font-secondary: 'Raleway', Helvetica;
-    
+
 }
 
 * {
@@ -31,4 +32,48 @@ body {
     width: 100%;
     font-family: var(--font-primary);
     font-size: 0.875rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/* HEADER */
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2em 1.5em;
+    font-family: var(--font-secondary);
+    font-weight: 400;
+    background-color: var(--navy-background);
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.logo-area {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+
+.logo-header {
+    width: 6em;
+}
+
+.navbar-nav {
+    display: flex;
+    gap: 1.5em;
+    list-style: none;
+}
+
+.nav-link {
+    color: var(--off-white);
 }
