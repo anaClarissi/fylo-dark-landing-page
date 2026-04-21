@@ -12,7 +12,7 @@
     --red-error: hsl(0, 100%, 63%);
 
     --white: #ffffff;
-    --off-white: #dadada;
+    --off-white: #cdcfdd;
 
     /* FONTS */
 
@@ -187,4 +187,39 @@ a {
 
 .benefits .card-img {
     width: 4em;
+}
+
+
+
+/* PRODUCTIVE SECTION */
+
+.productive {
+    padding: 1.5em;
+}
+
+.productive .card {
+    align-items: start;
+    text-align: left;
+    gap: 1.5em;
+}
+
+.productive .card-img-area {
+    padding-bottom: 2em;
+}
+
+.productive-image {
+    width: 100%;
+}
+
+.productive-link {
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+    padding-bottom: 0.5em;
+    color: var(--teal-call-to-action-gradient);
+    border-bottom: 1px solid var(--teal-call-to-action-gradient);
+}
+
+.productive-link img {
+    width: 1.5em;
 }
