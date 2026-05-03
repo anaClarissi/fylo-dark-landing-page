@@ -1,0 +1,27 @@
+:root {
+    --navy-intro-email-signup-background: #1c2431;
+    --navy-main-background: #181f2a;
+    --navy-footer-background: #0b1523;
+    --navy-testimonials-background: #202a3c;
+
+    --teal-inside-call-to-action-gradient: #65e2d9;
+    --cyan-inside-call-to-action-gradient: #339ecc;
+    --red-error: #ff4242;
+
+    --white: #ffffff;
+
+    --font-primary: 'Open Sans', sans-serif;
+    --font-secondary: 'Raleway', Helvetica;
+}
+
+html * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-primary);
+    font-size: 0.875rem;
+    font-weight: 400;
+}
