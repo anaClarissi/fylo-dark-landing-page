@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
@@ -20,20 +20,59 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 
   <!-- STYLE CSS -->
-  <link rel="stylesheet" href="src/css/style.css">
+  <link rel="stylesheet" href="./src/css/style.css">
   
 </head>
 <body>
-  Features
-  Team
-  Sign In
+  <header id="header" class="container-fluid">
 
-  All your files in one secure location, accessible anywhere.
+    <nav class="navbar">
 
-  Fylo stores all your most important files in one secure location. Access them wherever 
-  you need, share and collaborate with friends family, and co-workers.
+      <div class="logo-area">
 
-  Get Started
+        <a href="#" class="navbar-brand">
+
+          <img src="./src/images/logo.svg" alt="Logo" id="logo">
+
+        </a>
+
+      </div>
+
+      <ul class="navbar-nav">
+
+        <li class="nav-item"><a href="#" class="nav-link">Features</a></li>
+
+        <li class="nav-item"><a href="#" class="nav-link">Team</a></li>
+
+        <li class="nav-item"><a href="#" class="nav-link">Sign In</a></li>
+
+      </ul>
+
+    </nav>
+
+    
+
+  </header>
+
+  <main id="main">
+    <section class="container-fluid intro-section">
+
+      <div class="with-bg-img">
+        <img src="src/images/illustration-intro.png" alt="Illustration Intro" class="intro-illustration">
+        <h1 class="title">All your files in one secure location, accessible anywhere.</h1>
+      </div>
+
+      <div class="not-bg-img">
+        <p class="subtitle">
+          Fylo stores all your most important files in one secure location. Access them wherever
+          you need, share and collaborate with friends family, and co-workers.
+        </p>
+        <a href="#" class="btn btn-get-started btn-gradient">Get Started</a>
+      </div>
+
+    </section>
+  </main>
+
 
   Access your files, anywhere
 

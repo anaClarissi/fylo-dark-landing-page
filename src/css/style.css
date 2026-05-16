@@ -8,7 +8,9 @@
     --cyan-inside-call-to-action-gradient: #339ecc;
     --red-error: #ff4242;
 
-    --white: #ffffff;
+    --white-01: #ffffff;
+    --white-02: #eeeeee;
+    --white-03: #;
 
     --font-primary: 'Open Sans', sans-serif;
     --font-secondary: 'Raleway', Helvetica;
@@ -24,4 +26,111 @@ body {
     font-family: var(--font-primary);
     font-size: 0.875rem;
     font-weight: 400;
+    color: var(--white-01);
+    background-color: var(--navy-testimonials-background);
+}
+
+.btn-gradient {
+    background-image: linear-gradient(
+        to right,
+        var(--teal-inside-call-to-action-gradient),
+        var(--cyan-inside-call-to-action-gradient)
+    );
+    color: var(--white-01);
+    font-weight: 600;
+    padding: 0.75rem;
+    border-radius: 30px;
+}
+
+
+
+/* HEADER */
+
+#header {
+    padding: 1em 1.5em;
+    background-color: var(--navy-intro-email-signup-background);
+}
+
+#header .navbar-nav {
+    display: flex;
+    flex-direction: row !important;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#logo {
+    width: clamp(6rem, 10vw, 8rem);
+}
+
+.navbar-nav {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    list-style: none;
+}
+
+.nav-link {
+    font-size: clamp(0.75rem, 4vw, 1.1rem);
+    text-decoration: none;
+    color: white;
+}
+
+
+
+/* MAIN */
+
+#main {
+    background-color: var(--navy-main-background);
+}
+
+.intro-section {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    text-align: center;
+    padding: 0;
+}
+
+.intro-section * {
+    z-index: 2;
+}
+
+.intro-illustration {
+    width: 100%;
+}
+
+.title {
+    font-family: var(--font-secondary);
+    font-size: clamp(1.5rem, 5vw, 2rem);
+    font-weight: 600;
+    line-height: 1.4;
+}
+
+.with-bg-img, .not-bg-img {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.25rem;
+    text-align: center;
+}
+
+.with-bg-img {
+    padding: 1.5rem 1rem 0;
+    background-color: var(--navy-intro-email-signup-background);
+    background-image: url('../images/bg-curvy-mobile.svg');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+
+.not-bg-img {
+    padding: 1.5rem 2.5rem 4rem;
+}
+
+.subtitle {
+    line-height: 1.5;
+}
+
+.btn-get-started {
+    width: 250px;
 }
