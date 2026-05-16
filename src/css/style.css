@@ -182,3 +182,49 @@ body {
     border-bottom: 1px solid var(--teal-inside-call-to-action-gradient);
     width: fit-content;
 }
+
+
+.comments-section {
+    display: flex;
+    flex-direction: column;
+    gap: 1.75rem;
+    padding: 3rem 2.5rem;
+}
+
+.comments-section .card {
+    gap: 1rem;
+    padding: 1.5rem 1.25rem 1.25rem;
+    font-size: clamp(0.75rem, 3vw, 1rem);
+    color: var(--white-02);
+    background-color: var(--navy-testimonials-background);
+    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.13);
+}
+
+.comments-section .card .card-profile {
+    display: grid;
+    grid-template-rows: auto auto;
+    grid-template-columns: min-content max-content;
+    column-gap: 0.5rem;
+}
+
+.comments-section .card .card-profile-img {
+    width: 35px;
+    border-radius: 50%;
+    grid-row: span 2;
+}
+
+.comments-section .card .card-profile-name {
+    font-size: clamp(0.8rem, 4vw, 1rem);
+}
+
+.comments-section .card:nth-child(1) {
+    position: relative;
+}
+
+.quotes {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(10px, -100%);
+    width: 25px;
+}
