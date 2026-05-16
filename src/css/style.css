@@ -134,3 +134,30 @@ body {
 .btn-get-started {
     width: 250px;
 }
+
+
+.benefits-section {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 4rem;
+    padding: 3rem 1.5rem;
+}
+
+.benefits-section .card {
+    align-items: center;
+    gap: 0.5rem;
+    padding: 1rem;
+    background-color: var(--navy-main-background);
+    border: none;
+    text-align: center;
+    color: var(--white-01);
+}
+
+.benefits-section .card-img {
+    width: 60px;
+    margin-bottom: 1rem;
+}
+
+.benefits-section .card-title {
+    font-size: clamp(1.25rem, 5vw, 1.5rem);
+}
