@@ -10,7 +10,6 @@
 
     --white-01: #ffffff;
     --white-02: #eeeeee;
-    --white-03: #;
 
     --font-primary: 'Open Sans', sans-serif;
     --font-secondary: 'Raleway', Helvetica;
@@ -80,8 +79,13 @@ body {
 /* MAIN */
 
 #main {
+    position: relative;
     background-color: var(--navy-main-background);
+    padding-bottom: 45vh;
 }
+
+
+/* INTRO SECTION */
 
 .intro-section {
     display: flex;
@@ -136,6 +140,9 @@ body {
 }
 
 
+
+/* BENEFITS SECTION */
+
 .benefits-section {
     display: grid;
     grid-template-columns: 1fr;
@@ -163,6 +170,9 @@ body {
 }
 
 
+
+/* PURPOSE SECTION */
+
 .purpose-section {
     display: flex;
     flex-direction: column;
@@ -183,6 +193,9 @@ body {
     width: fit-content;
 }
 
+
+
+/* COMMENTS SECTION */
 
 .comments-section {
     display: flex;
@@ -227,4 +240,61 @@ body {
     left: 0;
     transform: translate(10px, -100%);
     width: 25px;
+}
+
+
+
+/* EMAIL SIGNUP ARTICLE */
+
+.email-signup {
+    position: absolute;
+    bottom: 0;
+    transform: translateY(50%);
+    align-items: center;
+    gap: 1rem;
+    padding: 3rem 1.5rem 1rem;
+    margin: 1.5rem 1rem 0;
+    text-align: center;
+    color: var(--white-01);
+    background-color: var(--navy-intro-email-signup-background);
+    border: none;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.4);
+}
+
+.email-signup h2 {
+    font-size: clamp(1.1rem, 3vw, 1.5rem);
+}
+
+.email-signup p {
+    font-size: clamp(0.9rem, 3vw, 1rem);
+    color: var(--white-02);
+    line-height: 1.5;
+}
+
+.email-signup form {
+    width: 100%;
+}
+
+#email, .btn-started-free {
+    display: block;
+    width: 100%;
+    height: 50px;
+    margin: 1.5rem auto;
+}
+
+#email {
+    padding-left: 1.5rem;
+    border-radius: 30px;
+    border: none;
+    outline: none;
+    font-size: clamp(0.75rem, 1vw, 1rem);
+}
+
+
+
+/* FOOTER */
+
+#footer {
+    padding-top: 35vh;
 }
