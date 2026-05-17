@@ -5,11 +5,12 @@
     --navy-testimonials-background: #202a3c;
 
     --teal-inside-call-to-action-gradient: #65e2d9;
+    --hover-inside-call-to-action-gradient: #7fdbd5;
     --cyan-inside-call-to-action-gradient: #339ecc;
     --red-error: #ff4242;
 
     --white-01: #ffffff;
-    --white-02: #ddd;
+    --white-02: #bbb;
 
     --font-primary: 'Open Sans', sans-serif;
     --font-secondary: 'Raleway', Helvetica;
@@ -39,6 +40,15 @@ body {
     font-weight: 600;
     padding: 0.75rem;
     border-radius: 30px;
+    transition: all .2s ease-in-out;
+}
+
+.btn-gradient:hover {
+    background-image: linear-gradient(
+        to right,
+        var(--hover-inside-call-to-action-gradient),
+        var(--hover-inside-call-to-action-gradient)
+    );
 }
 
 
@@ -71,7 +81,13 @@ body {
 .nav-link {
     font-size: clamp(0.75rem, 4vw, 1.1rem);
     text-decoration: none;
-    color: white;
+    color: var(--white-02);
+    transition: all .2s ease;
+}
+
+.nav-link:hover {
+    color: var(--white-01);
+    text-decoration: underline;
 }
 
 @media (max-width: 350px) {
@@ -220,8 +236,17 @@ body {
     padding-bottom: 0.25rem;
     border-bottom: 1px solid var(--teal-inside-call-to-action-gradient);
     width: fit-content;
+    transition: all .2s ease;
 }
 
+.purpose-section a:hover {
+    color: var(--white-01);
+    border-color: var(--white-01);
+}
+
+.purpose-section a:hover > img {
+    filter: brightness(100);
+}
 
 
 /* COMMENTS SECTION */
@@ -322,6 +347,11 @@ body {
     font-size: clamp(0.75rem, 1vw, 1rem);
 }
 
+.error-message {
+    opacity: 0;
+    font-size: 0.75rem !important;
+    color: var(--red-error) !important;
+}
 
 
 /* FOOTER */
@@ -385,6 +415,12 @@ body {
 #footer .nav-link {
     font-size: 1rem;
     color: var(--white-02);
+    transition: color .2s ease;
+}
+
+#footer .nav-link:hover {
+    color: var(--white-01);
+    text-decoration: none;
 }
 
 #footer .social-links {
@@ -394,7 +430,7 @@ body {
     gap: 1rem;
 }
 
-#footer .social-links .nav-item {
+#footer .social-links .nav-link {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -402,6 +438,11 @@ body {
     width: 40px;
     height: 40px;
     border-radius: 50%;
+}
+
+#footer .social-links .nav-link:hover {
+    color: var(--hover-inside-call-to-action-gradient);
+    border-color: var(--hover-inside-call-to-action-gradient);
 }
 
 @media (min-width: 768px) {
@@ -506,6 +547,7 @@ body {
         display: flex;
         gap: 2rem;
         align-items: center;
+        margin: 0;
     }
 
     #email, .btn-started-free {
@@ -520,6 +562,10 @@ body {
 
     .btn-started-free {
         flex: 1;
+    }
+
+    .error-message {
+        align-self: flex-start;
     }
 
     /* FOOTER */
